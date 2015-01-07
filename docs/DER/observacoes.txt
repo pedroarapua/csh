@@ -1,0 +1,11 @@
+- No relacionamento de estado com cidade, está levando o código do país também
+- Precisa criar uma tabela de usuários para que possa ser gravado o código do usuário de inclusão e de alteração. A mesma
+também é necessária para fazer login no sistema
+- Campo telefone poderia ser varchar
+- Codigo do Pais no telefone está repetido
+- No relacionamento de cidade com endereco está levando estado e pais, não é necessário já que na cidade temos o estado e no estado temos o país.
+- Poderia haver uma tabela de ceps para buscar o cep do endereço do cliente
+- Tabela de pessoa fisica, o nome não precisa ser chave
+- Cpf da pessoa física, poderia ser varchar, pois existe cpf que começa com 0.
+- Os relacionamentos de chave estrangeira devem ficar rosa, todos os relacionamentos estão como chave primária
+- Codigo do país poderia estar em cliente ao invés de pessoa física.
