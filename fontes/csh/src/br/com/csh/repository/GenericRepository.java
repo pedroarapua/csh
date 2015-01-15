@@ -70,6 +70,10 @@ public abstract class GenericRepository<T, K> implements Serializable {
 		return this.find(filters);
 	}
 	
+	public Collection<T> findAll() {
+		return this.findAll(new ArrayList<String>(), new HashMap<String, Object>());
+	}
+	
 	public Collection<T> findAll(ArrayList<String> properties) {
 		return this.findAll(properties, new HashMap<String, Object>());
 	}
